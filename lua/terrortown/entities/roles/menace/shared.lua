@@ -12,10 +12,10 @@ function ROLE:PreInitialize()
 	self.scoreKillsMultiplier = 5 -- multiplier for kill of player of another team
 	self.scoreTeamKillsMultiplier = -16 -- multiplier for teamkill
 	
-	--Credit vars
-	self.preventFindCredits = false
-	self.preventKillCredits = false
-	self.preventTraitorAloneCredits = false
+	--Prevent the Menace from gaining credits normally.
+	self.preventFindCredits = true
+	self.preventKillCredits = true
+	self.preventTraitorAloneCredits = true
 	
 	self.defaultEquipment = SPECIAL_EQUIPMENT -- here you can set up your own default equipment
 	self.defaultTeam = TEAM_TRAITOR
